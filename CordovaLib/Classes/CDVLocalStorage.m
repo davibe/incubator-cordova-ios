@@ -402,12 +402,12 @@
 
 - (BOOL) shouldBackup
 {
-    return [self item:self.original isNewerThanItem:self.backup];
+    return NO; //[self item:self.original isNewerThanItem:self.backup];
 }
 
 - (BOOL) shouldRestore
 {
-    return [self item:self.backup isNewerThanItem:self.original];
+    return NO; //[self item:self.backup isNewerThanItem:self.original];
 }
 
 @end
