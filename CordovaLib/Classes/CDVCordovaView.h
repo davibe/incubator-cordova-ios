@@ -21,9 +21,9 @@
 
 
 @interface CDVCordovaView : UIWebView {
-	
-
+	NSMutableDictionary *sourceMap;
 }
 
+@property (nonatomic, retain) NSMutableDictionary *sourceMap;
 
 @end
